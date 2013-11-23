@@ -58,11 +58,11 @@ public class HomePage_RegistrationTests extends Helper_Subpages {
 	public void Click_Register_VerifyRegistrationPage() throws IOException, InterruptedException {
 		
 		
-		clickElement(driver, By.linkText(getValue("homepage.registerlink","HomePage")));
+		clickElement(driver, By.linkText(getValue("homepage.signinlink","HomePage")));
 	
-		waitForPagetoLoad_Element(driver, 60, EC.titleContains(getValue("homepage.registerpagetitle_value", "HomePage")), true);
+		waitForPagetoLoad_Element(driver, 60, EC.titleContains(getValue("homepage.signpagetitle_value", "HomePage")), true);
 		
-		assertTrue(IsElementPresent(By.xpath(getValue("homepage.registerpagetitle_element", "HomePage")), driver));
+		assertTrue(IsElementPresent(By.xpath(getValue("homepage.signinpagetitle_element", "HomePage")), driver));
 	}
 	
 	
